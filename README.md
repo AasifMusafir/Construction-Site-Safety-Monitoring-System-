@@ -15,10 +15,11 @@ A real-time Personal Protective Equipment (PPE) compliance monitoring system bui
 - Snapshot capture for violations
 - CSV-based logging
 - Swagger UI documentation
-- Docker-ready architecture
 - Extensible for industrial deployments
 
 ---
+
+# Dataset Research and Selection : **https://github.com/AasifMusafir/Construction-Site-Safety-Monitoring-System-/blob/main/training/notebook/README.md**
 
 # Project Structure
 
@@ -354,6 +355,51 @@ manager.stop_all()
 
 ---
 
+# Deployment Formats
+
+The trained PPE detection model has been exported into multiple deployment formats to support a wide range of inference environments.
+
+| Format | File Extension | Target Platform |
+|----------|---------------|----------------|
+| PyTorch | .pt | Training and standard inference |
+| ONNX | .onnx | Cross-platform deployment |
+| TensorRT | .engine | NVIDIA GPUs and Jetson devices |
+| TensorFlow Lite | .tflite | Edge devices, Raspberry Pi, Android |
+
+This enables the system to be deployed across cloud, edge, and embedded environments with minimal changes to the application code.
+
+---
+
+# Edge Deployment Support
+
+The PPE Compliance Monitoring System is designed for deployment at the edge, enabling low-latency inference directly on industrial devices without requiring cloud connectivity.
+
+Supported Edge Platforms:
+
+- NVIDIA Jetson Nano
+- NVIDIA Jetson Xavier NX
+- NVIDIA Jetson Orin
+- Raspberry Pi 4/5
+- Industrial Edge PCs
+- Android-based Edge Devices
+
+Supported Inference Engines:
+
+- PyTorch
+- ONNX Runtime
+- TensorRT
+- TensorFlow Lite
+
+Benefits:
+
+- Reduced latency
+- Lower bandwidth requirements
+- Improved privacy and security
+- Real-time PPE compliance monitoring
+- Suitable for remote construction and industrial sites
+
+- ---
+
 # Running Unit Tests
 
 Install pytest:
@@ -386,15 +432,14 @@ Expected:
 
 # Future Improvements
 
-- Person-to-PPE association using tracking
+- DeepSORT/ByteTrack integration for worker tracking
 - PostgreSQL integration
 - Email/SMS alerts
 - Web dashboard
 - Restricted zone monitoring
-- Edge deployment on NVIDIA Jetson
 - Analytics and reporting
 - GPU Docker deployment
-- MQTT/PLC integration
+- Light tower/PLC integration
 
 ---
 
@@ -460,12 +505,12 @@ exists.
 - FastAPI
 - Uvicorn
 - Docker
+- TensorRT
+- TensorFlow Lite
+- ONNX Runtime
 - RTSP Streaming
 - Pandas
 - Computer Vision
+- Edge AI
 
 ---
-
-# Author
-
-**Asif Musafir**
