@@ -40,7 +40,11 @@ PPE_Detector/
 │   ├── snapshots/
 │   ├── logs/
 │   └── model/
-│       └── best.pt
+        └── tensorrt
+        │  └── best.onnx
+        └── tflite
+        |  └── best_float32.tflite
+        └── best.pt
 │
 ├── tests/
 │   ├── test_detector.py
@@ -54,8 +58,6 @@ PPE_Detector/
 ├── notebooks/
 │   └── train.ipynb
 │
-├── Dockerfile
-├── docker-compose.yml
 ├── requirements.txt
 ├── README.md
 └── .gitignore
