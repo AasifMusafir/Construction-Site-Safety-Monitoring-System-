@@ -90,7 +90,7 @@ Recommended:
 ## Clone Repository
 
 ```bash
-git clone <repository_url>
+git clone https://github.com/AasifMusafir/Construction-Site-Safety-Monitoring-System-.git
 
 cd PPE_Detector
 ```
